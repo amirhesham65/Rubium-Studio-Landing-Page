@@ -309,7 +309,7 @@ header {
 }
 
 .call-to-action {
-  padding: 3rem;
+  padding: 2rem 0 5rem 0;
   text-align: center;
   
   h3, p {
@@ -331,4 +331,14 @@ header {
     }
   }
 
+}
+
+footer {
+  background: $darkColor;
+  p {
+    text-align: center;
+    color: $lightColor;
+    opacity: 0.3;
+    padding: 1rem;
+  }
 }

@@ -368,7 +368,7 @@ header .btns-group .button {
 }
 
 .call-to-action {
-  padding: 3rem;
+  padding: 2rem 0 5rem 0;
   text-align: center;
 }
 
@@ -389,5 +389,16 @@ header .btns-group .button {
 .call-to-action p.powerful {
   opacity: 1;
   padding-bottom: 2rem;
+}
+
+footer {
+  background: #1A1A1A;
+}
+
+footer p {
+  text-align: center;
+  color: #F9F9F9;
+  opacity: 0.3;
+  padding: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
