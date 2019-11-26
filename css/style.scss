@@ -85,7 +85,7 @@ a {
 }
 
 .button {
-  display: block;
+  display: inline-block;
   padding: 12px;
   min-width: 150px;
   text-transform: uppercase;
@@ -259,8 +259,11 @@ header {
   }
   .projects-listing {
     padding: 3rem 0;
+    border-bottom: 1px solid rgba(138, 138, 138, 0.3);
+    
     .project {
-      max-width: 758px;
+      max-width: 281px;
+      
       margin: 1.5rem auto;
       display: flex;
       flex-direction: column-reverse;
@@ -270,6 +273,7 @@ header {
 
       @include Desktop {
         flex-direction: row;
+        max-width: 758px;
         &:nth-of-type(1), &:nth-of-type(3) {
           flex-direction: row-reverse;
           padding-right: 10rem;
@@ -298,10 +302,33 @@ header {
         .button {
           color: $darkColor;
           border-color: $darkColor;
-          display: inline-block;
-          
         }
       }
     }
   }
+}
+
+.call-to-action {
+  padding: 3rem;
+  text-align: center;
+  
+  h3, p {
+    max-width: 240px;
+    margin: 0 auto;
+  }
+
+  h3 {
+    padding-bottom: 2rem;
+  }
+
+  p {
+    font-size: 10px;
+    padding: 1rem 0;
+
+    &.powerful {
+      opacity: 1;
+      padding-bottom: 2rem;
+    }
+  }
+
 }

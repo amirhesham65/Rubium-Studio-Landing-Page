@@ -76,7 +76,7 @@ a {
 }
 
 .button {
-  display: block;
+  display: inline-block;
   padding: 12px;
   min-width: 150px;
   text-transform: uppercase;
@@ -300,10 +300,11 @@ header .btns-group .button {
 
 .projects .projects-listing {
   padding: 3rem 0;
+  border-bottom: 1px solid rgba(138, 138, 138, 0.3);
 }
 
 .projects .projects-listing .project {
-  max-width: 758px;
+  max-width: 281px;
   margin: 1.5rem auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -326,6 +327,7 @@ header .btns-group .button {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    max-width: 758px;
   }
   .projects .projects-listing .project:nth-of-type(1), .projects .projects-listing .project:nth-of-type(3) {
     -webkit-box-orient: horizontal;
@@ -363,6 +365,29 @@ header .btns-group .button {
 .projects .projects-listing .project .project-text .button {
   color: #1A1A1A;
   border-color: #1A1A1A;
-  display: inline-block;
+}
+
+.call-to-action {
+  padding: 3rem;
+  text-align: center;
+}
+
+.call-to-action h3, .call-to-action p {
+  max-width: 240px;
+  margin: 0 auto;
+}
+
+.call-to-action h3 {
+  padding-bottom: 2rem;
+}
+
+.call-to-action p {
+  font-size: 10px;
+  padding: 1rem 0;
+}
+
+.call-to-action p.powerful {
+  opacity: 1;
+  padding-bottom: 2rem;
 }
 /*# sourceMappingURL=style.css.map */
