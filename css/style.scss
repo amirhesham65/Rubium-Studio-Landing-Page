@@ -23,6 +23,7 @@ $lightColor: #F9F9F9;
   list-style-type: none;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+  color: $darkColor;
 }
 
 h1 {
@@ -72,6 +73,17 @@ a {
   margin: 0 auto;
 }
 
+.sandwich {
+  padding: 3rem 1rem;
+}
+
+.caption {
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  opacity: 0.3;
+}
+
 .button {
   display: block;
   padding: 12px;
@@ -89,6 +101,7 @@ a {
   
   &-secondary {
     border: 1px solid $lightColor;
+    opacity: 0.7;
   }
 }
 
@@ -96,6 +109,7 @@ a {
 header {
   padding: 2rem 0 1rem 0;
   background: $darkColor;
+  color: $lightColor;
 
   @include Desktop {
     padding: 3rem 0 7rem 0;
@@ -128,13 +142,13 @@ header {
   .hero-text {
     text-align: center;
     margin: 3rem auto 4rem auto;
-    color: $lightColor;
 
     @include Desktop {
       margin: 7rem auto 4rem auto;
     }
 
     h1, p {
+      color: $lightColor;
       max-width: 280px;
       margin: 0 auto;
       @include Desktop {
@@ -168,8 +182,126 @@ header {
     justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+
+    @include Desktop {
+      flex-direction: row;
+    }
+
     img {
       align-self: center;
+      margin: 2rem 1rem;
+    }
+  }
+}
+
+.services {
+  
+  .text-block {
+    text-align: center;
+
+    h2 {
+      padding: 0.7rem 0;
+    }
+
+    p {
+      max-width: 580px;
+      margin: 0 auto;
+    }
+  }
+
+  .services-listing {
+    padding: 1rem;
+    border-bottom: 1px solid rgba(138, 138, 138, 0.3);
+    .service {
+      max-width: 760px;
+      margin: 3rem auto;
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: space-between;
+      
+      > * {
+        align-self: center;
+      }
+
+      .service-text {
+        max-width: 310px;
+      
+        h3 {
+          padding: 1rem 0;
+          
+        }
+
+        p {
+          font-size: 10px;
+
+          @include Desktop {
+            font-size: 12px;
+          }
+        }
+      }
+
+      @include Desktop {
+        flex-direction: row;
+        margin: 7rem auto;
+
+        &:nth-of-type(2) {
+          flex-direction: row-reverse;
+        }
+      }
+    }
+  }
+}
+
+.projects {
+  .text-block {
+    text-align: center;
+  }
+  .projects-listing {
+    padding: 3rem 0;
+    .project {
+      max-width: 758px;
+      margin: 1.5rem auto;
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: space-between;
+      background: #fff;
+      box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
+
+      @include Desktop {
+        flex-direction: row;
+        &:nth-of-type(1), &:nth-of-type(3) {
+          flex-direction: row-reverse;
+          padding-right: 10rem;
+        }
+      }
+
+      .project-text {
+        align-self: center;
+        padding: 2rem 0;
+        text-align: center;
+
+        @include Desktop {
+          padding: 30px 0 20px 45px;
+          text-align: left;
+        }
+
+        h3, p {
+          max-width: 230px;
+        }
+
+        p {
+          font-size: 10px;
+          padding: 1rem 0;
+        }
+
+        .button {
+          color: $darkColor;
+          border-color: $darkColor;
+          display: inline-block;
+          
+        }
+      }
     }
   }
 }
