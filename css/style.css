@@ -146,9 +146,14 @@ header .navigation-bar nav {
     display: inline-block;
     font-size: 14px;
     margin-left: 40px;
+    -webkit-transition: 0.3s ease all;
+    transition: 0.3s ease all;
   }
   header .navigation-bar nav ul li.active {
     font-weight: bold;
+  }
+  header .navigation-bar nav ul li:hover {
+    opacity: 0.3;
   }
 }
 
