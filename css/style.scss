@@ -24,6 +24,7 @@ $lightColor: #F9F9F9;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
   color: $darkColor;
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -93,15 +94,25 @@ a {
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
+  transition: 0.3s ease all;
+  cursor: pointer;
 
   &-primary {
     background: $primaryColor;
-    box-shadow: 0px 4px 18px $primaryColor;
+    box-shadow: 0px 4px 9px $primaryColor;
+    &:hover {
+      box-shadow: 0px 4px 18px $primaryColor;
+    }
   }
   
   &-secondary {
     border: 1px solid $lightColor;
     opacity: 0.7;
+    &:hover {
+      background: $lightColor;
+      color: $darkColor;
+      opacity: 1;
+    }
   }
 }
 
