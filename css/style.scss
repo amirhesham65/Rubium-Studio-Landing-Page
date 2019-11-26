@@ -1,0 +1,175 @@
+// Importing fonts
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:400,700&display=swap');
+
+// Colors
+$primaryColor: #FECE2F;
+$darkColor: #1A1A1A;
+$lightColor: #F9F9F9;
+
+// Mixins and Media Queries
+@mixin Desktop {
+  @media (min-width: 750px) {
+    @content;
+  }
+}
+
+// Resetting
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+
+  @include Desktop {
+    font-size: 48px;
+  } 
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+
+  @include Desktop {
+    font-size: 36px;
+  }
+}
+
+h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 22px;
+
+  @include Desktop {
+    font-size: 18px;
+  }
+}
+
+p {
+  font-size: 12px;
+  line-height: 20px;
+  opacity: 0.7;
+}
+
+a {
+  color: $lightColor;
+}
+
+// Styling
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.button {
+  display: block;
+  padding: 12px;
+  min-width: 150px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+
+  &-primary {
+    background: $primaryColor;
+    box-shadow: 0px 4px 18px $primaryColor;
+  }
+  
+  &-secondary {
+    border: 1px solid $lightColor;
+  }
+}
+
+
+header {
+  padding: 2rem 0 1rem 0;
+  background: $darkColor;
+
+  @include Desktop {
+    padding: 3rem 0 7rem 0;
+  }
+
+  .navigation-bar {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+
+    nav {
+      display: none;
+      @include Desktop {
+        display: block;
+        ul {
+          li {
+            display: inline-block;
+            font-size: 14px;
+            margin-left: 40px;
+
+            &.active {
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .hero-text {
+    text-align: center;
+    margin: 3rem auto 4rem auto;
+    color: $lightColor;
+
+    @include Desktop {
+      margin: 7rem auto 4rem auto;
+    }
+
+    h1, p {
+      max-width: 280px;
+      margin: 0 auto;
+      @include Desktop {
+        max-width: 580px;
+      }
+    }
+  }
+
+  .btns-group {
+    display: flex;
+    flex-wrap: wrap;
+    width: 150px;
+    margin: 30px auto;
+    justify-content: space-between;
+    
+    .button { margin: 5px 0; }
+
+    @include Desktop {
+      width: 310px;
+    }
+  }
+}
+
+.companies-listing {
+  background: #F3F3F3;
+
+  .horizontal-listing {
+    max-width: 750px;
+    padding: 3rem 1rem;
+    margin: 0 auto;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    img {
+      align-self: center;
+    }
+  }
+}

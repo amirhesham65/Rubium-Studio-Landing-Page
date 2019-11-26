@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:400,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  text-decoration: none;
+  list-style-type: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+@media (min-width: 750px) {
+  h1 {
+    font-size: 48px;
+  }
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+@media (min-width: 750px) {
+  h2 {
+    font-size: 36px;
+  }
+}
+
+h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+@media (min-width: 750px) {
+  h3 {
+    font-size: 18px;
+  }
+}
+
+p {
+  font-size: 12px;
+  line-height: 20px;
+  opacity: 0.7;
+}
+
+a {
+  color: #F9F9F9;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.button {
+  display: block;
+  padding: 12px;
+  min-width: 150px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.button-primary {
+  background: #FECE2F;
+  -webkit-box-shadow: 0px 4px 18px #FECE2F;
+          box-shadow: 0px 4px 18px #FECE2F;
+}
+
+.button-secondary {
+  border: 1px solid #F9F9F9;
+}
+
+header {
+  padding: 2rem 0 1rem 0;
+  background: #1A1A1A;
+}
+
+@media (min-width: 750px) {
+  header {
+    padding: 3rem 0 7rem 0;
+  }
+}
+
+header .navigation-bar {
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .navigation-bar nav {
+  display: none;
+}
+
+@media (min-width: 750px) {
+  header .navigation-bar nav {
+    display: block;
+  }
+  header .navigation-bar nav ul li {
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 40px;
+  }
+  header .navigation-bar nav ul li.active {
+    font-weight: bold;
+  }
+}
+
+header .hero-text {
+  text-align: center;
+  margin: 3rem auto 4rem auto;
+  color: #F9F9F9;
+}
+
+@media (min-width: 750px) {
+  header .hero-text {
+    margin: 7rem auto 4rem auto;
+  }
+}
+
+header .hero-text h1, header .hero-text p {
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+@media (min-width: 750px) {
+  header .hero-text h1, header .hero-text p {
+    max-width: 580px;
+  }
+}
+
+header .btns-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 150px;
+  margin: 30px auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .btns-group .button {
+  margin: 5px 0;
+}
+
+@media (min-width: 750px) {
+  header .btns-group {
+    width: 310px;
+  }
+}
+
+.companies-listing {
+  background: #F3F3F3;
+}
+
+.companies-listing .horizontal-listing {
+  max-width: 750px;
+  padding: 3rem 1rem;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.companies-listing .horizontal-listing img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+/*# sourceMappingURL=style.css.map */
