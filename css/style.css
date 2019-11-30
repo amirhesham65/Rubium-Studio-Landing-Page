@@ -412,6 +412,7 @@ header .btns-group .button {
 }
 
 footer {
+  padding: 1rem;
   background: #1A1A1A;
 }
 
@@ -420,5 +421,14 @@ footer p {
   color: #F9F9F9;
   opacity: 0.3;
   padding: 1rem;
+}
+
+.social-links {
+  text-align: center;
+}
+
+.social-links li {
+  display: inline-block;
+  margin: 0 5px;
 }
 /*# sourceMappingURL=style.css.map */

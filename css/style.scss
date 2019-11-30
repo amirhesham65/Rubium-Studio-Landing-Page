@@ -350,11 +350,20 @@ header {
 }
 
 footer {
+  padding: 1rem;
   background: $darkColor;
   p {
     text-align: center;
     color: $lightColor;
     opacity: 0.3;
     padding: 1rem;
+  }
+}
+
+.social-links {
+  text-align: center;
+  li {
+    display: inline-block;
+    margin: 0 5px;
   }
 }
